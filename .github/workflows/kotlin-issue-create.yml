@@ -13,5 +13,5 @@ jobs:
   call-workflow-passing-data:
     uses: yuhao900914/Amplitude-Flutter-Example/.github/workflows/jira_create_issue_template.yml@main
     with:
-      label: "Flutter"
+      label: "Kotlin"
     secrets: inherit
