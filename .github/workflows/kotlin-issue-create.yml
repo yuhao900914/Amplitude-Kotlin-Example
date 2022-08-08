@@ -1,0 +1,17 @@
+# Creates jira tickets for new github issues to help triage
+name: Jira Issue Creator TEST
+
+on:
+  issues:
+    types: [opened]
+  workflow_call:
+    inputs:
+      label:
+        type: string
+
+jobs:
+  call-workflow-passing-data:
+    uses: yuhao900914/Amplitude-Flutter-Example/.github/workflows/jira_create_issue_template.yml@main
+    with:
+      label: "Flutter"
+    secrets: inherit
